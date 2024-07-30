@@ -1,6 +1,5 @@
 contrasena="david"
 archivoTareas="tareas.txt"  
-
 while true; do
     read -p "Ingresa la contraseña: " inputContrasena
 

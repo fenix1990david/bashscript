@@ -1,2 +1,2 @@
-#crea el archivo que utiliza el c[odigo
+ #crea el archivo que utiliza el codigo base
 touch tareas.txt

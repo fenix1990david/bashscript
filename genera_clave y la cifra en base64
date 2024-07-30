@@ -1,5 +1,4 @@
-touch clave.txt
-vim clave.txt "con el editor crea la clave"
+echo "david" >  clave.txt
 cat clave.txt
 base64 clave.txt > clave_codificada
 cat clave_codificada

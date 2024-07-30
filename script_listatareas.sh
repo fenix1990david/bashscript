@@ -1,6 +1,4 @@
 contrasena="david"
-archivoTareas="tareas.txt"
-
 while true; do
     read -p "Ingresa la contraseña: " inputContrasena
 
@@ -14,6 +12,9 @@ while true; do
 
         case $opcion in
             1)
+                if [[ ! -f "$archivoTareas" ]]; then
+                    touch "$archivoTareas"
+                fi
                 cat "$archivoTareas"
                 ;;
             2)

@@ -1,10 +1,12 @@
 contrasena="david"
+archivoTareas="tareas.txt"  
+
 while true; do
     read -p "Ingresa la contraseña: " inputContrasena
 
     if [[ "$inputContrasena" == "$contrasena" ]]; then
         echo "Contraseña correcta. Opciones:"
-        echo "1. Ver tareas"
+        echo "1. Ver tareas pendientes"
         echo "2. Agregar tarea"
         echo "3. Completar tarea"
         echo "4. Salir"
@@ -12,6 +14,7 @@ while true; do
 
         case $opcion in
             1)
+                #creamos el archivo si no existe
                 if [[ ! -f "$archivoTareas" ]]; then
                     touch "$archivoTareas"
                 fi
